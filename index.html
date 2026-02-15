@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Archive - Choose Language</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 首页特有样式 */
+        .language-portal {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .site-title {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .site-subtitle {
+            color: #7f8c8d;
+            font-size: 1.4em;
+            margin-bottom: 60px;
+            font-style: italic;
+        }
+        .language-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .language-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            width: 220px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid;
+            text-decoration: none;
+            color: inherit;
+        }
+        .language-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .language-card.zh { border-color: #2ecc71; }
+        .language-card.en { border-color: #3498db; }
+        .language-card.fr { border-color: #e74c3c; }
+        .language-flag {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .language-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .language-desc {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .footer-note {
+            margin-top: 80px;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-portal">
+        <div class="site-title">🖼️ Lumen Archive</div>
+        <div class="site-subtitle">A Digital Sanctuary for the World's Artistic Heritage</div>
+        <p style="font-size: 1.1em; color: #555; max-width: 600px; margin: 0 auto 40px;">
+            Welcome. This is an open, non-profit digital archive dedicated to preserving and sharing humanity's greatest artistic achievements. All resources are in the public domain or openly licensed.
+        </p>
+        
+        <div class="language-grid">
+            <a href="index_zh.html" class="language-card zh">
+                <div class="language-flag">🇨🇳</div>
+                <div class="language-name">中文</div>
+                <div class="language-desc">以中文浏览完整的艺术档案与鉴赏资料</div>
+            </a>
+            
+            <a href="index_en.html" class="language-card en">
+                <div class="language-flag">🇺🇸</div>
+                <div class="language-name">English</div>
+                <div class="language-desc">Browse the complete archive and scholarly resources in English</div>
+            </a>
+            
+            <a href="index_fr.html" class="language-card fr">
+                <div class="language-flag">🇫🇷</div>
+                <div class="language-name">Français</div>
+                <div class="language-desc">Parcourez les archives complètes et les ressources en français</div>
+            </a>
+        </div>
+        
+        <div class="footer-note">
+            <p>This project is built with open knowledge principles. Contribute or learn more on <a href="https://github.com" style="color: #3498db;">GitHub</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
